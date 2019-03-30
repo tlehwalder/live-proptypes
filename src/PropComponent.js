@@ -8,8 +8,8 @@ export default class PropComponent extends React.Component {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <h2>{title}</h2>
         <div>
-          <strong>half:</strong>&nbsp;
-          <span>{half / 2}</span>
+          <strong>half ➗:</strong>&nbsp;
+          <span className="lime">{half / 2}</span>
         </div>
         <hr />
         <div>
@@ -21,7 +21,7 @@ export default class PropComponent extends React.Component {
         <hr />
         <div>
           <strong>ice cream 🍦:</strong>&nbsp;
-          <span>{iceCream}</span>
+          <span className="purple">{iceCream}</span>
         </div>
         <hr />
         <h3>read from objects 👓</h3>
@@ -30,7 +30,7 @@ export default class PropComponent extends React.Component {
             <span style={{ color: "grey" }}>complex.firstValue</span>:
           </strong>
           &nbsp;
-          <span>{complex.firstValue}</span>
+          <span className="blue">{complex.firstValue}</span>
         </div>
         <div>
           <strong>
@@ -39,7 +39,7 @@ export default class PropComponent extends React.Component {
             {""}
           </strong>
           &nbsp;
-          <span>{complex.nested.secondValue / 2}</span>
+          <span className="maroon">{complex.nested.secondValue / 2}</span>
         </div>
       </div>
     );
