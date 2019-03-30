@@ -15,7 +15,7 @@ class App extends Component {
           title={"PropComponent"}
           half={10}
           mapped={["eins", "zwei", "drei"]}
-          iceCream={"choclate"}
+          iceCream={"chocolate"}
           complex={{ firstValue: "first", nested: { secondValue: 8 } }}
         />
       </div>

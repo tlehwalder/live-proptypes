@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class PropComponent extends React.Component {
   render() {
@@ -14,8 +15,8 @@ export default class PropComponent extends React.Component {
         <hr />
         <div>
           <strong>map something:</strong>
-          {mapped.map(element => (
-            <div>➡{element}</div>
+          {mapped.map((element, _i) => (
+            <div key={_i}>➡{element}</div>
           ))}
         </div>
         <hr />
@@ -45,3 +46,7 @@ export default class PropComponent extends React.Component {
     );
   }
 }
+
+PropComponent.propTypes = {
+  iceCream: PropTypes.oneOf(["chocolate", "vanilla", "strawberry"])
+};
