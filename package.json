@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "prettier": "1.16.4",
+    "prop-types": "^15.7.2",
     "react-scripts": "2.1.8",
-    "prop-types": "^15.7.2"
+    "react-testing-library": "^6.0.3"
   },
   "dependencies": {
     "react": "^16.8.6",
