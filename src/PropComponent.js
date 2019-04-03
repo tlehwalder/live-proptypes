@@ -9,7 +9,14 @@ export default class PropComponent extends React.Component {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <h2>{title}</h2>
         <div>
-          <strong>half ➗:</strong>&nbsp;
+          <strong>
+            half{" "}
+            <span role="img" aria-label="a">
+              ➗
+            </span>
+            :
+          </strong>
+          &nbsp;
           <span className="lime">{half / 2}</span>
         </div>
         <hr />
@@ -21,11 +28,23 @@ export default class PropComponent extends React.Component {
         </div>
         <hr />
         <div>
-          <strong>ice cream 🍦:</strong>&nbsp;
+          <strong>
+            ice cream{" "}
+            <span role="img" aria-label="b">
+              🍦
+            </span>
+            :
+          </strong>
+          &nbsp;
           <span className="purple">{iceCream}</span>
         </div>
         <hr />
-        <h3>read from objects 👓</h3>
+        <h3>
+          read from objects{" "}
+          <span role="img" aria-label="c">
+            👓
+          </span>
+        </h3>
         <div>
           <strong>
             <span style={{ color: "grey" }}>complex.firstValue</span>:
